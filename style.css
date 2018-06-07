@@ -275,7 +275,7 @@ footer.second p {
 /*------------------Media queries for mobile version-------------*/
 
 /*These rules will only apply when screen size is 768px or lower*/
-@media only screen and (max-width: 768px) {
+@media all and (max-width: 768px) {
 	h2 {
 		font-size: 150%;
 	}
