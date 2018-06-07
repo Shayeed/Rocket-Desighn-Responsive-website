@@ -1,0 +1,359 @@
+/*Google font link*/
+/*Initially launched in 2010 as Google Web Fonts, Google Fonts is a collection of interactive application programming 
+interfaces that allow users to use web fonts on their website. This service is hosted by Google, and all of the fonts 
+and bandwidth is free.*/
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+
+/*Reset style*/
+* {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+body {
+	/*We don't need these as it will be overwritten. But it is a good fail-safe practice*/
+	background:#F5F5F5;	
+	color:#67727A;
+	font-family:'Alegreya',sans-serif;
+	margin:0;
+}
+
+h2 {
+	/*The rules are in percentage to make the site responsive*/
+	font-size:250%;	/*The font size is 250% of the original h2 size*/
+	font-weight: 700;
+	text-align: center;
+	padding-top: 2%;
+	color: #F5F5F5;
+}
+
+h3 {
+	font-size: 175%;
+	line-height: 155%;
+	padding:5% 0;
+	font-weight: 400;
+	color: #F5F5F5;
+}
+
+p {
+	font-family:'Alegreya Sans',sans-serif;
+	color: #F5F5F5;
+	font-size: 160%;
+	line-height: 150%;
+	padding: 5%;
+	text-indent: 2%;	/*Indent the first line of text*/
+	text-align: justify;
+}
+
+img {
+	max-width: 100%;
+	height:auto;
+	width:auto;
+	margin-bottom: -4px; /*Align the bottom of image to the text top area*/
+}
+
+header{
+	background-color: #6991AC;
+	width:100%;
+	height: 86px;
+}
+
+#header-inner {
+	max-width: 1200px;	/*Div remains at 1200px when stretched beyond it*/
+	margin: 0 auto;	/*Alighn div at the center*/
+}
+
+#logo {
+	margin: 20px;
+	float: left;
+	width:200px;
+	height: 60px;
+	background: url(img/RD.png) no-repeat center;
+}
+
+nav {
+	float:right;
+	padding: 25px 20px 0 0;
+}
+
+#menu-icon {
+	display:hidden;	/*Icon displays only in mobile version*/
+	width: 40px;
+	height: 40px;
+	background: url(img/nav.png) center;
+}
+
+a:hover#menu-icon {
+	border-radius: 4px 4px 0 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+/*Individual menus in the menu bar*/
+nav ul li {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 150%;
+	display: inline-block;	/*Display in one line*/
+	float: left;	/*Float to the left of the ul container*/
+	padding:10px;
+}
+
+nav ul li a {
+	color: #F5F5F5;
+	text-decoration: none; /*Remove underline*/
+}
+
+nav ul li a:hover {
+	color: #C3D7DF;
+}
+
+.current {
+	columns: #C3D7DF;
+}
+/*---------------End of navigation style------------------*/
+
+/*------------------Banner style--------------------------*/
+.banner {
+	width:100%;
+	background-color: #6991AC;
+}
+
+.banner-inner {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+/*-----------------End of banner style-------------------*/
+
+/*----------------Start of one-fourth section-------------*/
+.one-fourth {
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+#html {
+	background-color: #F1AA90;
+}
+
+#css {
+	background-color: #BEB9AD;
+}
+
+#seo {
+	background-color: #AADCD2;
+}
+
+#social {
+	background-color: #A2B2C1;
+}
+
+.one-fourth i {	/*Icons styling*/
+	color: #F0F0F0;
+	font-size: 500%;
+	padding: 13% 0 4% 0;
+}
+/*----------------End of one-fourth section-------------*/
+
+/*----------------Start of two column section-------------*/
+.inner-wrapper {
+	float:left;
+	width: 100%;
+	background-color: #C3D7DF;
+}
+
+article {
+	float:left;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+}
+
+#tablet {
+	background-color: #C3D7DF;
+}
+
+aside {
+	float: right;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+}
+
+#tablet2 {
+	background-color: #A2B2C1;
+}
+
+#mobile2 {
+	background-color: #BEB9AD;
+}
+
+#desktop2 {
+	background-color: #F1AA90;
+}
+
+.inner-wrapper-2 {
+	float: left;
+	width:100%;
+	background-color: #C3D7DF;
+}
+/*--------------------End of two column section-----------------*/
+
+/*-------------------Start of three column section--------------*/
+.inner-wrapper-3 {
+	float: left;
+	width: 100%;
+	background-color: #AADCD2;	/*This colour is required for the below background colors to work*/
+}
+
+.one-third {
+	width: 33.33333%;
+	float: left;
+	text-align: center;
+}
+
+#google {
+	background-color: #A2B1C1;
+}
+
+#marketing {
+	background-color: #BEB9AD;
+}
+
+#customers {
+	background-color: #AADCD2;
+}
+
+#smiley {
+	background-color: #AADCD2;
+	padding: 0 0 1%;
+	clear:both;	/*Above it the things are floated. So we need to clear it so that it remails below the floats*/
+}
+/*--------------------------End of three column section---------------------------*/
+
+/*-------------------Start of footer column section--------------*/
+footer {
+	background-color: #6991AC;
+	width: 100%;
+}
+
+.social {
+	list-style-type: none;
+	text-align: center;
+}
+
+.social li {
+	display: inline;
+}
+
+.social i {
+	font-size: 460%;
+	margin: 1%;
+	padding: 5% 5% 5% 4%;
+	color: #C3D7DF;
+}
+
+.social i:hover {
+	color: #F5F5F5;
+}
+
+footer.second {
+	border: 1px solid #AADCD2;	/*Top border*/
+	background-color: #544B59;
+	max-height: 55%;
+	margin:0;
+}
+
+footer.second p {
+	padding: 5px 0 9px 0;
+	text-align: center;
+}
+/*-------------------End of footer-------------------------------*/
+
+/*------------------Media queries for mobile version-------------*/
+
+/*These rules will only apply when screen size is 768px or lower*/
+@media only screen and (max-width: 768px) {
+	h2 {
+		font-size: 150%;
+	}
+
+	h3 {
+		font-size: 125%
+	}
+
+	p {
+		font-size: 120%;
+	}
+
+	#logo {
+		margin: 15px 0 20px -25px;
+		background: url(img/RD_mobile.png) no-repeat center;
+	}
+
+	#menu-icon {
+		display: inline-block;
+	}
+
+	nav ul, nav:active ul {
+		display:none;
+		/*The z-index property specifies the stack order of an element.
+		An element with greater stack order is always in front of an element with a lower stack order.
+		Note: z-index only works on positioned elements (position:absolute, position:relative, or position:fixed).*/
+		z-index: 1000;
+		position: absolute;
+		padding: 20px;
+		background: #6991AC;
+		right: 20px;
+		top: 60px;
+		border: 1px solid #FFF;
+		border-radius: 2px 0 2px 2px;
+		width: 50%; 
+	}
+
+	nav:hover ul {
+		display: block;	/*When we hover over the nav icon the ul changes the display from none to block*/
+	}
+
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	.one-fourth {
+		width: 100%;
+	}
+
+	.one-fourth i {
+		font-size: 350%;
+		padding: 4% 0 1% 0;
+	}
+
+	article {
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+	}
+
+	#mobile {
+		/*display:none means that the tag in question will not appear on the page at all (although you can still interact 
+		with it through the dom). There will be no space allocated for it between the other tags.
+		visibility:hidden means that unlike display:none, the tag is not visible, but space is allocated for it on the page.
+		The tag is rendered, it just isn't seen on the page.*/
+		display: none;
+	}
+
+	.one-third {
+		width: 100%;
+	}
+
+	.social i {
+		font-size: 180%;
+	}
+}
+/*------------------End of Media queries-------------------------*/

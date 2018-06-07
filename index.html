@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">	<!--For mobile website so that they do not scale up or down-->
+	<title>Rocket Design - Theme</title>	<!--The title is what is displayed at the top and also at the result section of serach engine-->
+	<link rel="stylesheet" type="text/css" href="style.css" />	<!--Link to CSS file-->	
+	<link href="css/font-awesome.min.css" rel="stylesheet"/>	<!--Link to font-awesome for footer icon-->
+	<link rel="shortcut icon" type="image/png" href="img/favicon.png"/>	<!--icon for title at the top-->
+</head>
+
+<body>
+	<!--Header-->
+	<header>
+		<div id="header-inner">	<!--Div to keep the max-width of the header fixed-->
+			<a href="index.html" id="logo"></a>	<!--The logo will be displayed here-->
+			<nav>	<!--navigation bar for the menus-->
+				<a href="#" id="menu-icon"></a>	<!--Collapsed icon on mobile version of the menu-->
+				<ul>	<!--List of menus-->
+					<li><a href="#" class="current">Home</a></li>
+					<li><a href="#">Skills</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Our Team</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>	
+		</div>
+	</header>
+	<!--End of header-->
+
+	<!--Banner-->
+	<section class="banner">
+		<div class="banner-inner">	<!--Wrapper div for banner image-->
+			<img src="img/rocket_design.png">
+		</div>
+	</section>
+	<!--End of banner-->
+
+	<!--Four column section-->
+	<!--First column-->
+	<section class="one-fourth" id="html">
+		<td><i class="fa fa-html5"></i></td>	<!--The i tag is italics tag but here it is use with class of font-awesome. The fa-html5 is the font awesome class of html5 icon-->
+		<h3>HTML</h3>
+	</section>
+
+	<!--Second column-->
+	<section class="one-fourth" id="css">
+		<td><i class="fa fa-css3"></i></td>	<!--The fa-css3 class is the font awesome class of css3 icon-->
+		<h3>CSS</h3>
+	</section>
+
+	<!--Third column-->
+	<section class="one-fourth" id="seo">
+		<td><i class="fa fa-search"></i></td>	<!--The fa-search is the font awesome class of search icon-->
+		<h3>SEO</h3>
+	</section>
+
+	<!--Fourth column-->
+	<section class="one-fourth" id="social">
+		<td><i class="fa fa-users"></i></td>	<!--The fa-users is the font awesome class of users icon-->
+		<h3>SOCIAL</h3>
+	</section>
+	<!--End of four column section-->
+
+	<!--Two column layout-->
+	<section class="inner-wrapper">
+		<article id="tablet">
+			<img src="img/hand_ipad.png"/>
+		</article>
+		<aside id="tablet2">
+			<h2>MOBILE, TABLET, DESKTOP</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		</aside>
+	</section>
+
+	<section class="inner-wrapper-2">
+		<article id="mobile2">
+			<h2>ACROSS EACH DEVICE</h2>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		</article>
+		<aside id="mobile">
+			<img src="img/hand_mobile.png"/>
+		</aside>
+	</section>
+
+	<section class="inner-wrapper">
+		<article id="desktop">
+			<img src="img/desktop.png"/>
+		</article>
+		<aside id="desktop2">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+		</aside>
+	</section>
+	<!--End of two column layout-->
+
+	<!--Three column layout-->
+	<section class="inner-wrapper-3">
+		<section class="one-third" id="google">
+			<h3>GOOGLE SEARCH</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</section>
+
+		<section class="one-third" id="marketing">
+			<h3>MARKETING</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</section>
+
+		<section class="one-third" id="customers">
+			<h3>HAPPY CUSTOMERS</h3>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+		</section>
+	</section>
+	<!--End of three column layout-->
+
+	<!--Smiley face section-->
+	<section id="smiley">
+		<h2>: )</h2>
+	</section>
+	<!--End of smiley face section-->
+
+	<!--Social icons-->
+	<footer>
+		<ul class="social">
+			<!--The target blank tag is used so that the page opens in a new tab-->
+			<!--The class fa-facebook and others are the font-awesome class for icons-->
+			<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+			<li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+			<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		</ul>
+	</footer>
+	<!--End of social icons-->
+
+	<!--Footer section-->
+	<footer class="second">
+		<p>&copy; Rocket Design</p>
+	</footer>
+	<!--End of main footer-->
+</body>
+
+</html>
